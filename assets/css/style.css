@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Chewy&display=swap');
+
 * {
     font-family: "Balsamiq Sans", sans-serif;
 }
-.chewy{
+
+.chewy {
     font-family: "Chewy", system-ui;
+}
+
+.circle-box {
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
 }
